@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+.nav ul li {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav ul li ::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.nav ul li:hover ::after {
+  width: 100%;
+}
+
+.active {
+  color: #ff004f;
+  font-weight: 600;
+}
+
+.glow-effect {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+
+.tab-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.tab-link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.tab-link.active-link::after {
+  width: 60%;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+
+*{
+  font-family: "Inter", serif;
+}
+
