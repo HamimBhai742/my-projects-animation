@@ -39,7 +39,7 @@ const About = () => {
         <img className="w-96 rounded-lg h-fit" src="/profile.jpeg" alt="" />
         <div className="max-sm:mt-5">
           <h3 className="font-bold text-3xl">About Me</h3>
-          <p className=" text-gray-500">
+          <p className=" text-gray-600 mt-2">
             Hello everyone! 👋 My name is Hamim, and I’m a passionate Full-Stack
             Web Developer who loves building dynamic, fast, and user-friendly
             web applications. My journey in web development started with a
@@ -93,20 +93,20 @@ const About = () => {
               <li className="font-semibold text-lg text-[#ff004f] opacity-70">
                 Technologies
               </li>
-              <li className="text-gray-500">
+              <li className="text-gray-600">
                 HTML5, CSS3, Javascript, Tailwind CSS, React JS, Git, GitHub,
                 Node.JS, Tanstack query, JWT, AXIOS, Express.JS
               </li>
               <li className="font-semibold text-lg text-[#ff004f] opacity-70 mt-3">
                 Tools
               </li>
-              <li className="text-gray-500">
+              <li className="text-gray-600">
                 VS Code, Vercel, Figma, Netlify, Canva, ChatGPT
               </li>
               <li className="font-semibold text-lg text-[#ff004f] opacity-70 mt-3">
                 Soft skills
               </li>
-              <li className="text-gray-500">
+              <li className="text-gray-600">
                 Problem-Solving, Time Management, Continuous Learning,
                 Communication, Responsibility
               </li>
@@ -125,14 +125,14 @@ const About = () => {
               <li className="font-semibold opacity-70 text-[#ff004f]">
                 2022-2026
               </li>
-              <li className="text-gray-500">
+              <li className="text-gray-600">
                 {" "}
                 Dhaka Polytechnic Institute of Computer Science and Technology
               </li>
               <li className="font-semibold opacity-70 text-[#ff004f] mt-3">
-                2021-2019
+                2019-2021
               </li>
-              <li className="text-gray-500">
+              <li className="text-gray-600">
                 {" "}
                 Ruhitarpar D.M High School of Science
               </li>

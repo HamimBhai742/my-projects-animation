@@ -4,17 +4,26 @@ const Animation3D = () => {
   return (
     <div className="mx-8 mt-5">
       <div>
-        <h3 className="text-2xl font-bold">Step 1: Create a New Project</h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
-          <li>
-            Open <strong>Plotagon</strong> and click on{" "}
-            <strong>New Movie</strong> to start a new animation project.
-          </li>
-          <li>Give your project a name so you can recognize it later.</li>
-          <li>
-            Click <strong>Create</strong> to begin working on the animation.
-          </li>
-        </ul>
+        <div>
+          <h3 className="text-2xl font-bold">Step 1: Create a New Project</h3>
+          <ul className="list-disc list-inside ml-3 text-lg mt-2">
+            <li>
+              Open <strong>Plotagon</strong> and click on{" "}
+              <strong>New Movie</strong> to start a new animation project.
+            </li>
+            <li>Give your project a name so you can recognize it later.</li>
+            <li>
+              Click <strong>Create</strong> to begin working on the animation.
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat2.webp"
+            alt=""
+          />
+        </figure>
       </div>
 
       <div>
@@ -45,6 +54,13 @@ const Animation3D = () => {
             Repeat this step if you need multiple characters for your animation.
           </li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat3.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">
@@ -70,6 +86,13 @@ const Animation3D = () => {
             scene.
           </li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat4.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">
@@ -92,6 +115,13 @@ const Animation3D = () => {
           </li>
           <li>Adjust the speed, pitch, and tone of the voice.</li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat5.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">
@@ -121,6 +151,13 @@ const Animation3D = () => {
             </ul>
           </li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat6.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">
@@ -145,6 +182,13 @@ const Animation3D = () => {
             dialogue.
           </li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat7.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">Step 7: Preview and Edit</h3>
@@ -162,6 +206,13 @@ const Animation3D = () => {
           </li>
           <li>If needed, go back and edit any mistakes.</li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat8.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5">
@@ -177,9 +228,18 @@ const Animation3D = () => {
           </li>
           <li>Download the final video in MP4 format to your device.</li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat9.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">Step 9: Share Your Animation</h3>
+        <h3 className="text-2xl font-bold mt-5">
+          Step 9: Share Your Animation
+        </h3>
         <ul className="list-disc list-inside ml-3 text-lg mt-2">
           <li>
             You can now upload your animation video to:
@@ -194,6 +254,13 @@ const Animation3D = () => {
             If it's for a project, you can share it via email or Google Drive.
           </li>
         </ul>
+        <figure>
+          <img
+            className="w-[500px] h-[300px] mt-2 ml-3"
+            src="../../../img/hat10.webp"
+            alt=""
+          />
+        </figure>
       </div>
       <div>
         <h3 className="text-2xl font-bold mt-5"> Final Thoughts </h3>
@@ -206,7 +273,7 @@ const Animation3D = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/4ii0akUF4lk?si=TUKQRrmaDuTLLQLM"
+            src="https://www.youtube.com/embed/4ii0akUF4lk?si=ECymRdrEFzkpfkzw"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
