@@ -1,12 +1,22 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Animation3D = () => {
+  useEffect(() => {
+    AOS.init({
+      disable: "mobile",
+      duration: 1000,
+      offset: 120,
+    });
+  }, []);
+
   return (
     <div className="mx-8 mt-5">
       <div>
         <div>
-          <h3 className="text-2xl font-bold">Step 1: Create a New Project</h3>
-          <ul className="list-disc list-inside ml-3 text-lg mt-2">
+          <h3 className="text-3xl font-bold">Step 1: Create a New Project</h3>
+          <ul className="list-disc list-inside ml-5 text-lg mt-2">
             <li>
               Open <strong>Plotagon</strong> and click on{" "}
               <strong>New Movie</strong> to start a new animation project.
@@ -17,20 +27,20 @@ const Animation3D = () => {
             </li>
           </ul>
         </div>
-        <figure>
+        <figure data-aos="fade-up">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat2.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat2.webp"
             alt=""
           />
         </figure>
       </div>
 
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 2: Create and Customize Characters
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Click on <strong>Characters</strong> in the menu.
           </li>
@@ -40,7 +50,7 @@ const Animation3D = () => {
           </li>
           <li>
             Customize the following:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Face shape</li>
               <li>Skin tone</li>
               <li>Hairstyle & color</li>
@@ -54,26 +64,26 @@ const Animation3D = () => {
             Repeat this step if you need multiple characters for your animation.
           </li>
         </ul>
-        <figure>
+        <figure data-aos="fade-down">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat3.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat3.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 3: Choose and Set Up a Scene
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Click on <strong>Scenes</strong> and select a background for your
             animation.
           </li>
           <li>
             Plotagon provides several built-in environments such as:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Office</li>
               <li>Living room</li>
               <li>Park</li>
@@ -86,19 +96,19 @@ const Animation3D = () => {
             scene.
           </li>
         </ul>
-        <figure>
+        <figure data-aos="fade-down-left">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat4.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat4.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 4: Write Dialogue for the Characters
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Click on <strong>Dialogue</strong> and select the character who will
             speak.
@@ -106,7 +116,7 @@ const Animation3D = () => {
           <li>Type the dialogue in the text box.</li>
           <li>
             Choose the voice for each character:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Plotagon has text-to-speech (TTS) voices.</li>
               <li>
                 You can also record your own voice for a more realistic effect.
@@ -115,24 +125,24 @@ const Animation3D = () => {
           </li>
           <li>Adjust the speed, pitch, and tone of the voice.</li>
         </ul>
-        <figure>
+        <figure data-aos="fade-up-left">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat5.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat5.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 5: Add Expressions and Gestures
         </h3>
         <p>To make the characters look more realistic:</p>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>Click on the emotion section.</li>
           <li>
             Select an expression like:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Happy</li>
               <li>Sad</li>
               <li>Angry</li>
@@ -142,7 +152,7 @@ const Animation3D = () => {
           </li>
           <li>
             Click on <strong>Actions</strong> and add body movements:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Walking</li>
               <li>Sitting</li>
               <li>Pointing</li>
@@ -151,26 +161,26 @@ const Animation3D = () => {
             </ul>
           </li>
         </ul>
-        <figure>
+        <figure data-aos="fade-down-right">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat6.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm "
+            src="/hat6.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 6: Add Background Music and Sound Effects
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Click on the <strong>Music & Sounds</strong> option.
           </li>
           <li>Choose a background music track that matches your scene.</li>
           <li>
             Add sound effects like:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>Door opening</li>
               <li>Footsteps</li>
               <li>Applause</li>
@@ -182,23 +192,23 @@ const Animation3D = () => {
             dialogue.
           </li>
         </ul>
-        <figure>
+        <figure data-aos="zoom-in">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat7.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat7.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">Step 7: Preview and Edit</h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <h3 className="text-3xl font-bold mt-5">Step 7: Preview and Edit</h3>
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Click on <strong>Play</strong> to preview the animation.
           </li>
           <li>
             Check if:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>The dialogues are clear.</li>
               <li>The expressions match the scene.</li>
               <li>The background music and sound effects are balanced.</li>
@@ -206,19 +216,19 @@ const Animation3D = () => {
           </li>
           <li>If needed, go back and edit any mistakes.</li>
         </ul>
-        <figure>
+        <figure data-aos="zoom-in-left">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat8.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat8.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 8: Export and Save Your Video
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             Once satisfied, click <strong>Export</strong>.
           </li>
@@ -228,22 +238,22 @@ const Animation3D = () => {
           </li>
           <li>Download the final video in MP4 format to your device.</li>
         </ul>
-        <figure>
+        <figure data-aos="zoom-in-right">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat9.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat9.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5">
+        <h3 className="text-3xl font-bold mt-5">
           Step 9: Share Your Animation
         </h3>
-        <ul className="list-disc list-inside ml-3 text-lg mt-2">
+        <ul className="list-disc list-inside ml-5 text-lg mt-2">
           <li>
             You can now upload your animation video to:
-            <ul className="list-disc list-inside ml-3 text-lg">
+            <ul className="list-disc list-inside ml-5 text-lg">
               <li>YouTube</li>
               <li>Facebook</li>
               <li>Instagram</li>
@@ -254,22 +264,22 @@ const Animation3D = () => {
             If it's for a project, you can share it via email or Google Drive.
           </li>
         </ul>
-        <figure>
+        <figure data-aos="zoom-in-up">
           <img
-            className="w-[500px] h-[300px] mt-2 ml-3"
-            src="../../../img/hat10.webp"
+            className="w-[550px] h-[300px] mt-2 ml-5 rounded-sm"
+            src="/hat10.webp"
             alt=""
           />
         </figure>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-5"> Final Thoughts </h3>
-        <p className="ml-3">
+        <h3 className="text-3xl font-bold mt-5"> Final Thoughts </h3>
+        <p className="ml-5 mt-3">
           That's it! You've successfully created an animation using Plotagon. 🚀
           <br />
           Let me know if you need more details or help with anything! 🎬✨
         </p>
-        <div className="mt-4 ml-3">
+        <div className="mt-4 ml-5">
           <iframe
             width="560"
             height="315"

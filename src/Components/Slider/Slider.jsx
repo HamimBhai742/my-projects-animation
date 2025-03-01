@@ -3,52 +3,61 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "./styles.css";
+
 
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Pagination ,Autoplay} from "swiper/modules";
 
-const Slider = () => {
+export default function Slider() {
   return (
     <>
       <Swiper
+        slidesPerView={4}
+        centeredSlides={true}
+        spaceBetween={30}
         grabCursor={true}
         pagination={false}
-        loop={true}
-        spaceBetween={30}
-        effect={"fade"}
-        allowTouchMove={true}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
         }}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },  
+        }}
+        modules={[Pagination,Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="../../../img/ha1.webp" />
+          <img src="/ha1.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../img/ha2.webp" />
+          <img src="/ha2.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../img/ha3.jpeg" />
+          <img src="/ha3.jpeg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../img/ha4.webp" />
+          <img src="/ha4.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../img/ha5.jpg" />
+          <img src="/ha5.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../img/ha6.webp" />
+          <img src="/ha6.webp" />
         </SwiperSlide>
       </Swiper>
     </>
   );
-};
-
-export default Slider;
+}

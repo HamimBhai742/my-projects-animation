@@ -1,9 +1,9 @@
-import React from 'react';
+import Loading from '../../Components/Loading/Loading';
 
 const Animation2D = () => {
     return (
         <div>
-            
+            <Loading/>
         </div>
     );
 };

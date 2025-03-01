@@ -1,6 +1,15 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      disable: "mobile",
+      duration: 2000,
+      offset: 120,
+    });
+  }, []);
   const opentab = (tabname) => {
     var tablinks = document.getElementsByClassName("tab-link");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -36,7 +45,7 @@ const About = () => {
   return (
     <div id="about" className="mt-10 lg:mx-10 mx-3 md:mx-5">
       <div className="md:flex lg:gap-24 gap-12">
-        <img className="w-96 rounded-lg h-fit" src="/profile.jpeg" alt="" />
+        <img data-aos="flip-right" className="w-96 rounded-lg h-fit" src="/profile.jpeg" alt="" />
         <div className="max-sm:mt-5">
           <h3 className="font-bold text-3xl">About Me</h3>
           <p className=" text-gray-600 mt-2">
