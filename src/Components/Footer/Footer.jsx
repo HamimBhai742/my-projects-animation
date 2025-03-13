@@ -16,10 +16,15 @@ const Footer = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left Side: Brand Name with Glow Effect */}
-        <h2 className="text-2xl font-bold tracking-wide">
-          <span className="text-indigo-500">HA</span>
-          <span className="text-rose-400 glow-effect">MIM</span>
-        </h2>
+        <div>
+          <h2 className="text-3xl font-bold ">
+            <span className="text-white">H A </span>
+            <span className="text-rose-500"> M I M</span>
+          </h2>
+          <p className="text-sm font-semibold">
+            Passionate Web Developer | React, Node.js{" "}
+          </p>
+        </div>
 
         {/* Center: Navigation Links with Cool Hover Effect */}
         <nav className="flex space-x-5 text-sm md:text-base my-4 md:my-0">
@@ -41,18 +46,34 @@ const Footer = () => {
 
         {/* Right Side: Social Media Icons */}
         <div className="flex space-x-4">
-          {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-            (Icon, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                className="p-2 bg-gray-800 rounded-full hover:bg-rose-500 transition duration-300"
-                whileHover={{ rotate: 25 }}
-              >
-                <Icon className="text-white text-2xl" />
-              </motion.a>
-            )
-          )}
+          {[
+            {
+              icon: FaFacebookF,
+              url: "https://web.facebook.com/mdhamim42",
+            },
+            {
+              icon: FaTwitter,
+              url: "https://x.com/home?lang=en",
+            },
+            {
+              icon: FaInstagram,
+              url: "https://www.instagram.com/hamim_742",
+            },
+            {
+              icon: FaLinkedinIn,
+              url: "https://www.linkedin.com/in/md-hamim42",
+            },
+          ].map((Icon, index) => (
+            <motion.a
+              key={index}
+              href={Icon.url}
+              target="_blank"
+              className="p-2 bg-gray-800 rounded-full hover:bg-rose-500 transition duration-300"
+              whileHover={{ rotate: 25 }}
+            >
+              <Icon.icon className="text-white text-2xl" />
+            </motion.a>
+          ))}
         </div>
       </div>
 
