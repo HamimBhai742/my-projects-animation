@@ -10,6 +10,7 @@ const About = () => {
       offset: 120,
     });
   }, []);
+
   const opentab = (tabname) => {
     var tablinks = document.getElementsByClassName("tab-link");
     var tabcontents = document.getElementsByClassName("tab-contents");
